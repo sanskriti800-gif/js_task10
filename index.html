@@ -14,6 +14,71 @@
         <h3>To perform Task</h3>
         <button onclick="action()" style="color: aqua; background-color: blue;width:200px;height:30px;border-radius: 20px;font-family: 'Times New Roman', Times, serif;font-size: larger;">Click Here</button>
     </div>
+    <div style="margin:0 45%;">
+    <p>Follow these codes</p>
+        <code>
+            function action() {<br>
+                var arr = [1, 2, 3, 3, 4, 5]<br>
+                var crr = [2, 3, 4, 5, 6]<br>
+    
+                //Concat<br>
+                console.log(arr.concat(crr));<br>
+    
+                //copywithin<br>
+                console.log(arr.copyWithin(1, 2, 5));<br>
+    
+                //map<br>
+                console.log(arr.map((a) => {<br>
+                    return a * 10;<br>
+                }))<br>
+    
+                //every<br>
+                console.log(arr.every((a) => {<br>
+                    return a > 2;<br>
+                }));<br>
+    
+                //some<br>
+                console.log(arr.some((a) => {<br>
+                    return a > 2;<br>
+                }));<br>
+    
+                //filter<br>
+                console.log(arr.filter((a) => {<br>
+                    return a > 2;<br>
+                }))<br>
+    
+                //find<br>
+                console.log(arr.find((a) => {<br>
+                    return a > 2;<br>
+                }))<br>
+    
+                //findindex<br>
+                console.log(arr.findIndex((a) => {<br>
+                    return a > 2;<br>
+                }));<br>
+    
+                //indexOf<br>
+                console.log(arr.indexOf(3));<br>
+    
+                //lastindexOf<br>
+                console.log(arr.lastIndexOf(3));<br>
+    
+                //push<br>
+                arr.push(5);<br>
+                console.log(arr);<br>
+    
+                //pop<br>
+                arr.pop();<br>
+                console.log(arr);<br>
+    
+                //shift<br>
+                arr.shift();<br>
+                console.log(arr);<br>
+    
+            }
+        </code>
+        </div>
+
     <script>
         function action() {
             var arr = [1, 2, 3, 3, 4, 5]
