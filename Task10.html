@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="text-align: center;">
+        <h1>Perform certain task check console</h1>
+        <h3>To perform Task</h3>
+        <button onclick="action()" style="color: aqua; background-color: blue;width:200px;height:30px;border-radius: 20px;font-family: 'Times New Roman', Times, serif;font-size: larger;">Click Here</button>
+    </div>
+    <script>
+        function action() {
+            var arr = [1, 2, 3, 3, 4, 5]
+            var crr = [2, 3, 4, 5, 6]
+
+            //Concat
+            console.log(arr.concat(crr));
+
+            //copywithin
+            console.log(arr.copyWithin(1, 2, 5));
+
+            //map
+            console.log(arr.map((a) => {
+                return a * 10;
+            }))
+
+            //every
+            console.log(arr.every((a) => {
+                return a > 2;
+            }));
+
+            //some
+            console.log(arr.some((a) => {
+                return a > 2;
+            }));
+
+            //filter
+            console.log(arr.filter((a) => {
+                return a > 2;
+            }))
+
+            //find
+            console.log(arr.find((a) => {
+                return a > 2;
+            }))
+
+            //findindex
+            console.log(arr.findIndex((a) => {
+                return a > 2;
+            }));
+
+            //indexOf
+            console.log(arr.indexOf(3));
+
+            //lastindexOf
+            console.log(arr.lastIndexOf(3));
+
+            //push
+            arr.push(5);
+            console.log(arr);
+
+            //pop
+            arr.pop();
+            console.log(arr);
+
+            //shift
+            arr.shift();
+            console.log(arr);
+
+        }
+    </script>
+</body>
+
+</html>
